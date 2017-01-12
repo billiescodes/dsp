@@ -51,8 +51,7 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE (answer will be in number of days)
-
+>> 937 days
 b.  
 ```
 date_start = '12312013'  
