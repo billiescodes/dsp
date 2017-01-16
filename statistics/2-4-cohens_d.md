@@ -4,7 +4,7 @@ Exercise 2.4 Using the variable totalwgt_lb, investigate whether first ba- bies 
 
 
 
-
+```
 from __future__ import print_function, division
 import numpy as np
 import nsfg
@@ -51,3 +51,4 @@ d_prglngth =  CohenEffectSize(firsts.prglngth, others.prglngth)
 
 print ("CohenEffectSize: (total weight, pregnancy length) ")
 print ( d_totalwgt, d_prglngth)
+```
