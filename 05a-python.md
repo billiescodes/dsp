@@ -58,7 +58,22 @@ using Map:
 >>> list(map(sqrt, a))
 [1, 729, 9, 25, 12544, 4]
 ```
-> Using Filter:
+> Using Filter (which extracts each member of the list for which the condition returns true) :
+```python
+>>> list(filter(lambda x: x>50, a))
+[112]
+```
+> Set comprehension:
+```python
+>>> {x * y for x in [0, 1, 2] for y in [0, 1, 2]}
+set([0, 1, 2, 4])
+```
+> Dictionary comprehension:
+```python 
+>>> { x: str(len(x)*100)+'$' for x in ['London', 'Paris', 'New York'] }
+{'Paris': '500$', 'New York': '800$', 'London': '600$'}
+```
+
 
 
 ---
