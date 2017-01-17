@@ -85,11 +85,8 @@ P_identical = 1./300
 P_fraternal = 1./125
 given_identical_Maletwins = 1./2 # given identical; P of Maletwins (MM or FF)
 given_fraternal_Maletwins = 1./4 # given fraternal; P of Maletwins (MM or MF or FM or FF)
-
 Probability =( (P_identical * given_identical_Maletwins) + (P_fraternal*given_fraternal_Maletwins))/P_fratern
 al
-
-print " Probability of Elvis having an identical twin is: ", Probability
 
 >>  Probability of Elvis having an identical twin is:  0.458333333333
 ~                                                                           
@@ -100,7 +97,9 @@ print " Probability of Elvis having an identical twin is: ", Probability
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist: Sampling of data can be done an infinite amount of time. Therefore the data represent a repeating random sample, with a frequency (thus the name). The conclusion is drawn from the sampled data using the frequencies of each outcome.
+
+Bayesian: The data is fixed, and the parameters of interest are described as distributions. Each probability is its own random variable with a distribution of possible values, where the distribution was drawn from existing data.
 
 ---
 
