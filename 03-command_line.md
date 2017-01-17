@@ -9,14 +9,23 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
----
+> > 
+pwd -- display path
+find < dir> name "<file>" -- find a file in directory
+ps -- output current running process
+grep "<text>" <dir> -- search for all files containing ...
+head <file> --show first 5 lines
+tail <file -- show last 5 lines
+hist -- show the history of commands
+mkdir < directory > -- make a new directory
+<cmd> > <file> -- direct output of cmd into file 
+<cmd> >> <file> -- append output of cmd into file 
+<cmd>. interrupt process 
 
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
+`ls`   
 `ls -a`  
 `ls -l`  
 `ls -lh`  
@@ -26,13 +35,24 @@ What do the following commands do:
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
 
----
+`ls`    -- list directory
+`ls -a` -- lixt and include hidden files 
+`ls -l` -- list with details
+`ls -lh`-- list with details and human readable  
+`ls -lah`--all of the last three above  
+`ls -t`  -- list and sort by time modified 
+`ls -Glp` -- write slash after name if file is directory
 
 ###Q3.  More List Files in Unix  
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls -x
+ls -lit
+ls -R
+ls -d
+ls -c
+
 
 ---
 
@@ -40,7 +60,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> xargs constructs argument lists and invokes other utility
 
  
 
