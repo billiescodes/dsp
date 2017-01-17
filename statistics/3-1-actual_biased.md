@@ -5,7 +5,7 @@ Now compute the biased distribution we would see if we surveyed the children and
 Plot the actual and biased distributions, and compute their means. As a starting place, you can use chap03ex.ipynb.*
 
 The results from surveying children, and the official household survey are indeed different. In the children survey, households with between 2 to 6 children are overrepresented, by a factor of up to 3 times more. Households with no children would not be represented at all, even though they make up around 47% of total households.  
-The PMF mean is **1.02**, whereas the Biased mean is ** 2.4**.
+The PMF mean is **1.02**, whereas the Biased mean is **2.4** .
 
 ```python
 from __future__ import print_function, division
