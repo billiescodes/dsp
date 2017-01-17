@@ -11,7 +11,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 ###Q1. Lists &amp; Tuples
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
->>>
+>
 A list, or an array, is an ordered sequence of values, where the values can be any type (int, float, string). A tuple is an immutable list.
 
 Because Dictionary use hash tables to store key-value pairs, the keys have to be immutable. Only tuples can be used as keys in a dictionary. 
@@ -22,7 +22,7 @@ Because Dictionary use hash tables to store key-value pairs, the keys have to be
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->>> Both lists and sets are ordered sequences of values. The difference is that lists may contain redundant values, while sets only contain unique values. 
+>> Both lists and sets are ordered sequences of values. The difference is that lists may contain redundant values, while sets only contain unique values. 
 
 ---
 
@@ -30,7 +30,13 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+> Lambda is an anonymys function that lives inside methods. It is used to perform a quick action without explicitly writing a definition.
+
+```python
+>>> a = [1, 27,3, 5, 112, 2]
+>>> sorted(a, key = lambda x : x, reverse=True)
+[112, 27, 5, 3, 2, 1]
+```
 
 ---
 
