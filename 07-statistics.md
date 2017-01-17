@@ -83,13 +83,11 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ```python
 P_identical = 1./300
 P_fraternal = 1./125
-
 given_identical_Maletwins = 1./2 # given identical; P of Maletwins (MM or FF)
 given_fraternal_Maletwins = 1./4 # given fraternal; P of Maletwins (MM or MF or FM or FF)
 
 Probability =( (P_identical * given_identical_Maletwins) + (P_fraternal*given_fraternal_Maletwins))/P_fratern
 al
-
 
 print " Probability of Elvis having an identical twin is: ", Probability
 
