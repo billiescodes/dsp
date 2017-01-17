@@ -18,7 +18,16 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+
+    if count < 0:
+        print "you gave an illegal number of donuts"
+        return 'Error!'
+    elif count < 10:
+        number_donuts = str(count)
+    elif count > 9:
+        number_donuts = 'many'
+
+    return  "Number of donuts: {}".format(number_donuts)
 
 
 def both_ends(s):
@@ -37,8 +46,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
-
+    if len(s) < 2:
+        return ''
+    elif len(s) > 1:
+        return s[:2] + s[-2:]
 
 def fix_start(s):
     """
@@ -56,8 +67,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
-
+    exception= s[0]
+    nu_s = [exception] + [ '*' if i == exception else  i for i in s[1:] ]
+    result = "".join(nu_s)
+    return result
 
 def mix_up(a, b):
     """
@@ -74,7 +87,9 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    nu_a = b[:2] + a[2:]
+    nu_b = a[:2] + b[2:]
+    return " ".join([nu_a, nu_b])
 
 
 def verbing(s):
@@ -91,7 +106,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) < 3:
+        return s
+    else:
+        if s[-3:] == 'ing':
+            return s[:-3]+ 'ly'
+        else:
+            return s + 'ing'
 
 
 def not_bad(s):
@@ -111,7 +132,23 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+
+    tmp_string = "".join( a for a in s if a not in ('.', ',', '?', '!') ).split()
+    result = 0
+    not_position = None; bad_position = None
+
+
+    for a in range(0,len(tmp_string)):
+        if tmp_string[a] == 'not':
+            not_position = a
+        if tmp_string[a] == 'bad':
+            bad_position = a
+    print not_position, ' ', bad_position
+    if bad_position > not_position:
+        result = tmp_string[:not_position] + ['good'] + tmp_string[bad_position+1 :]
+        return " ".join(result)
+    else:
+        return s
 
 
 def front_back(a, b):
@@ -130,4 +167,22 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a_front = None; b_front= None; a_back = None; b_back = None
+
+    if len(a) % 2 == 0:
+        half = len(a)/2
+        a_front = a[:half]
+        a_back = a[half:]
+    else:
+        half = (len(a)/2)
+        a_front = a[:half+1]
+        a_back = a[half+1:]
+
+    if len(b) % 2 == 0:
+        b_front = b[: len(b)/2]
+        b_back = b[len(b)/2 : ]
+    else:
+        b_front = b[:len(b)/2 +1]
+        b_back = b[len(b)/2+1 :]
+
+    return "".join( [a_front, b_front, a_back, b_back])
