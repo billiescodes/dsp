@@ -1,4 +1,5 @@
 #!/usr/bin/Python
+# -*- coding: utf-8 -*-
 
 #billiescodes 2017
 # Metis assignment:
