@@ -6,6 +6,9 @@ The PMF image shows that the generated distribution is uniform. The CDF shows a 
 <img src=../img/ch4-2-fig1_PMF.pdf>
 <img src=../img/ch4-2-fig2_CDF.pdf>
 
+If only 10 numbers are generated, as can be seen in the following plot, the PMF is a better metric for the uniformity of the distribution. The CDF is not straight, or useful. The smoothness of the CDF line should improve with sample size.
+<img src=../img/ch4-2-fig3_both.pdf>
+
 ```python
 
 
