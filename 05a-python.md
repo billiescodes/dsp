@@ -11,18 +11,18 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 ###Q1. Lists &amp; Tuples
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
-```
+>>>
 A list, or an array, is an ordered sequence of values, where the values can be any type (int, float, string). A tuple is an immutable list.
 
 Because Dictionary use hash tables to store key-value pairs, the keys have to be immutable. Only tuples can be used as keys in a dictionary. 
-```
+
 ---
 
 ###Q2. Lists &amp; Sets
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>> Both lists and sets are ordered sequences of values. The difference is that lists may contain redundant values, while sets only contain unique values. 
 
 ---
 
